@@ -8,17 +8,17 @@ namespace Assignment1
 {
     internal class appManager
     {
-        private List<Appliance> appliances;
+        private List<string> appliances;
         public appManager()
         {
-            this.appliances = new List<Appliance>();
+            this.appliances = new List<string>();
             //this.displayMenu();
             string[] filePath = File.ReadAllLines(@"appliances.txt");
             foreach (string line in filePath)
             {
-                Console.WriteLine(line);
+                appliances.Add(line);
+                
             }
-            
             //load a file
 
         }
