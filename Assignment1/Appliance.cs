@@ -35,12 +35,20 @@ namespace Assignment1
 
         public bool isAvailable()
         {
-            return false;
+            if (this.quantity == 0) 
+            { 
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
-
+        
         public void checkout()
         {
-
+            Console.WriteLine("Enter item number of an Appliance: ");
+            
         }
 
         public virtual string formatForFile()

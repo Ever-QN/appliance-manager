@@ -20,7 +20,9 @@ namespace Assignment1
             this.width = width;
         }
 
-
+        public int NumberOfDoors { get; set; }
+        public double Height { get; set; }
+        public double Width { get; set; }
 
         public override string formatForFile()
         {
