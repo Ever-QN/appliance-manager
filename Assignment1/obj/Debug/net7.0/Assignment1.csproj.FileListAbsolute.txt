@@ -13,3 +13,18 @@ C:\Users\Quynh\Desktop\SAIT\Semester 2\Object Oriented Programming 2\VS Files OO
 C:\Users\Quynh\Desktop\SAIT\Semester 2\Object Oriented Programming 2\VS Files OOP2\Assignment1\Assignment1\obj\Debug\net7.0\Assignment1.pdb
 C:\Users\Quynh\Desktop\SAIT\Semester 2\Object Oriented Programming 2\VS Files OOP2\Assignment1\Assignment1\obj\Debug\net7.0\Assignment1.genruntimeconfig.cache
 C:\Users\Quynh\Desktop\SAIT\Semester 2\Object Oriented Programming 2\VS Files OOP2\Assignment1\Assignment1\obj\Debug\net7.0\ref\Assignment1.dll
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\bin\Debug\net7.0\Assignment1.exe
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\bin\Debug\net7.0\Assignment1.deps.json
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\bin\Debug\net7.0\Assignment1.runtimeconfig.json
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\bin\Debug\net7.0\Assignment1.dll
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\bin\Debug\net7.0\Assignment1.pdb
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.csproj.AssemblyReference.cache
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.AssemblyInfoInputs.cache
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.AssemblyInfo.cs
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.csproj.CoreCompileInputs.cache
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.dll
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\refint\Assignment1.dll
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.pdb
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\Assignment1.genruntimeconfig.cache
+C:\Users\Quynh\Source\Repos\appliance-manager\Assignment1\obj\Debug\net7.0\ref\Assignment1.dll

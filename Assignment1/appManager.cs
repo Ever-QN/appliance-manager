@@ -12,7 +12,13 @@ namespace Assignment1
         public appManager()
         {
             this.appliances = new List<Appliance>();
-            this.displayMenu();
+            //this.displayMenu();
+            string[] filePath = File.ReadAllLines(@"appliances.txt");
+            foreach (string line in filePath)
+            {
+                Console.WriteLine(line);
+            }
+            
             //load a file
 
         }
