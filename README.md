@@ -1,4 +1,4 @@
-#Modern Appliances Data Management
+Modern Appliances Data Management
 
 A local company, Modern Appliances, has hired you to implement a system to manage their appliance data more efficiently. They want a system that allows both employees and customers to find, list and purchase appliances. 
 
