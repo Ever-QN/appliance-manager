@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Quynh\\Desktop\\SAIT\\Semester 2\\Object Oriented Programming 2\\VS Files OOP2\\Assignment1\\Assignment1\\Assignment1.csproj": {}
+    "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Quynh\\Desktop\\SAIT\\Semester 2\\Object Oriented Programming 2\\VS Files OOP2\\Assignment1\\Assignment1\\Assignment1.csproj": {
+    "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Quynh\\Desktop\\SAIT\\Semester 2\\Object Oriented Programming 2\\VS Files OOP2\\Assignment1\\Assignment1\\Assignment1.csproj",
+        "projectUniqueName": "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
         "projectName": "Assignment1",
-        "projectPath": "C:\\Users\\Quynh\\Desktop\\SAIT\\Semester 2\\Object Oriented Programming 2\\VS Files OOP2\\Assignment1\\Assignment1\\Assignment1.csproj",
-        "packagesPath": "C:\\Users\\Quynh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Quynh\\Desktop\\SAIT\\Semester 2\\Object Oriented Programming 2\\VS Files OOP2\\Assignment1\\Assignment1\\obj\\",
+        "projectPath": "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
+        "packagesPath": "C:\\Users\\Savanna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Quynh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Savanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
