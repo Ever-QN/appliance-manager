@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "MuksvDZDiLoKl4AIOzCtfxB1EECKVB9nEdHfbu/8sKM1l5rV4DurmPyPVaRSghWa3+f4R/j9IxHQM2L46OOzeg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Quynh\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
-=======
-  "dgSpecHash": "SHWx81/eXhhPAUVSIWQ/9ktZ5YiDvWpcxvEDMHzScXpCHFsB+ZP5rPxgA3DWye/MTvAsauZMY3sbpyYspx7Dpw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
->>>>>>> 90823b0153fc40b63bbfb2bc183023ef30e35a93
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\Quynh\\Source\\Repos\\appliance-manager\\Assignment1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
