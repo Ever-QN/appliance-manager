@@ -24,7 +24,7 @@ namespace Assignment1
             this.color = color;
             this.price = price;
         }
-
+ 
         public long ItemNumber { get; set; }
         public string Brand { get; set; }
         public int Quantity { get; set; }

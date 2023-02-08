@@ -8,19 +8,27 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Quynh\\.nuget\\packages\\": {}
+    "C:\\Users\\Savanna\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Quynh\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
       "projectName": "Assignment1",
       "projectPath": "C:\\Users\\Quynh\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
       "packagesPath": "C:\\Users\\Quynh\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Quynh\\Source\\Repos\\appliance-manager\\Assignment1\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
+      "projectName": "Assignment1",
+      "projectPath": "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\Assignment1.csproj",
+      "packagesPath": "C:\\Users\\Savanna\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Savanna\\Source\\Repos\\appliance-manager\\Assignment1\\obj\\",
+>>>>>>> 90823b0153fc40b63bbfb2bc183023ef30e35a93
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Quynh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Savanna\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
