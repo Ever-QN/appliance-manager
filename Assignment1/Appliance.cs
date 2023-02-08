@@ -42,7 +42,7 @@ namespace Assignment1
 
         }
 
-        public string formatForFile()
+        public virtual string formatForFile()
         {
             return this.itemNumber + ";" + this.brand + ";" + this.quantity + ";" + this.wattage + ";" + this.color + ";" + this.price + ";";
         }
