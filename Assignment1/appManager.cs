@@ -13,7 +13,7 @@ namespace Assignment1
         {
             this.appliances = new List<Appliance>();
             loadFile();
-            //this.displayMenu();
+            this.displayMenu();
             //load a file
         }
 
@@ -30,22 +30,22 @@ namespace Assignment1
                 if (firstchar == '1')
                 {
                    appliances.Add(new Refrigerator(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), double.Parse(fields[3]), fields[4], double.Parse(fields[5]), int.Parse(fields[6]), double.Parse(fields[7]), double.Parse(fields[8])));
-                    Console.WriteLine("Refrigerator");
+                    //Console.WriteLine("Refrigerator");
                 }
                 else if (firstchar == '2')
                 {
-                    appliances.Add(new Vacuum(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), double.Parse(fields[3]), fields[4], double.Parse(fields[5]), fields[6], int.Parse(fields[7])));
-                    Console.WriteLine("Vacuum");
+                    /*appliances.Add(new Vacuum(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), double.Parse(fields[3]), fields[4], double.Parse(fields[5]), fields[6], int.Parse(fields[7])));*/
+                    //Console.WriteLine("Vacuum");
                 }
                 else if (firstchar == '3')
                 {
                     //appliances.Add(new Microwave());
-                    Console.WriteLine("Microwave");
+                    //Console.WriteLine("Microwave");
                 }
                 else if (firstchar == '4' || firstchar == '5')
                 {
                     //appliances.Add(new Dishwasher());
-                    Console.WriteLine("Dishwasher");
+                    //Console.WriteLine("Dishwasher");
                 }
                 
             }
