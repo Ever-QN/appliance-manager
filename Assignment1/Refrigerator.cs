@@ -32,7 +32,7 @@ namespace Assignment1
         public override string ToString()
         {
             return base.ToString() + "\nNumber of Doors: " + this.numberOfDoors + "\nHeight: " + this.height + 
-                "\nWidth: " + this.width;
+                "\nWidth: " + this.width + "\n";
         }
     }
 }
