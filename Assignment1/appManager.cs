@@ -11,11 +11,15 @@ namespace Assignment1
         private List<Appliance> appliances;
         public appManager()
         {
-            this.appliances = new List<Appliance>();
+            appliances = new List<Appliance>();
             loadFile();
             foreach (Appliance appliance in appliances)
             {
-                Console.WriteLine(appliance);
+                Console.WriteLine(appliance.Brand);
+                if (!string.IsNullOrEmpty(appliance.Brand))
+                {
+                    Console.WriteLine(appliance.Brand);
+                }
             }
             this.displayMenu();
             //load a file

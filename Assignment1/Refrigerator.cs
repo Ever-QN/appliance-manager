@@ -15,9 +15,9 @@ namespace Assignment1
         public Refrigerator(long itemNumber, string brand, int quantity, double wattage, string color, double price, 
             int numberOfDoors, double height, double width) : base(itemNumber, brand, quantity, wattage, color, price)
         {
-            this.numberOfDoors = numberOfDoors;
-            this.height = height;
-            this.width = width;
+            this.NumberOfDoors = numberOfDoors;
+            this.Height = height;
+            this.Width = width;
         }
 
         public int NumberOfDoors { get; set; }

@@ -18,12 +18,12 @@ namespace Assignment1
         public Appliance(long itemNumber, string brand, int quantity, double wattage, string color, 
             double price)
         {
-            this.itemNumber = itemNumber;
-            this.brand = brand;
-            this.quantity = quantity;
-            this.wattage = wattage;
-            this.color = color;
-            this.price = price;
+            this.ItemNumber = itemNumber;
+            this.Brand = brand;
+            this.Quantity = quantity;
+            this.Wattage = wattage;
+            this.Color = color;
+            this.Price = price;
         }
  
         public long ItemNumber { get; set; }
