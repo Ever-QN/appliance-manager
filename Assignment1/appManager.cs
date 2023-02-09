@@ -13,6 +13,10 @@ namespace Assignment1
         {
             this.appliances = new List<Appliance>();
             loadFile();
+            foreach (Appliance appliance in appliances)
+            {
+                Console.WriteLine(appliance);
+            }
             this.displayMenu();
             //load a file
         }
@@ -30,7 +34,7 @@ namespace Assignment1
                 if (firstchar == '1')
                 {
                    appliances.Add(new Refrigerator(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), double.Parse(fields[3]), fields[4], double.Parse(fields[5]), int.Parse(fields[6]), double.Parse(fields[7]), double.Parse(fields[8])));
-                    //Console.WriteLine("Refrigerator");
+   
                 }
                 else if (firstchar == '2')
                 {
@@ -56,14 +60,14 @@ namespace Assignment1
             int choice = 0;
             while (choice != 5)
             {
-                Console.WriteLine("Welcome to Modern Appliances!" +
-                    "How may we assist you?" +
-                    "1 – Check out appliance" +
-                    "2 – Find appliances by brand" +
-                    "3 – Display appliances by type" +
-                    "4 – Produce random appliance list" +
-                    "5 – Save & exit");
-                Console.WriteLine("Enter option: ");
+                Console.WriteLine("Welcome to Modern Appliances!\n" +
+                    "How may we assist you?\n" +
+                    "1 – Check out appliance\n" +
+                    "2 – Find appliances by brand\n" +
+                    "3 – Display appliances by type\n" +
+                    "4 – Produce random appliance list\n" +
+                    "5 – Save & exit\n");
+                Console.Write("Enter option: ");
                 choice = int.Parse(Console.ReadLine());
 
                 switch(choice)
