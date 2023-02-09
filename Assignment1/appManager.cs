@@ -8,20 +8,51 @@ namespace Assignment1
 {
     internal class appManager
     {
-        private List<string> appliances;
+        private List<Appliance> appliances;
         public appManager()
         {
             this.appliances = new List<string>();
             //this.displayMenu();
-            string[] filePath = File.ReadAllLines(@"appliances.txt");
+         
             foreach (string line in filePath)
             {
                 appliances.Add(line);
                 
             }
             //load a file
-
+            Console.WriteLine(appliances.Count);
         }
+
+        private void loadFile()
+        {
+            string filePath = @"appliances.txt";
+            string[] lines = File.ReadAllLines(filePath);
+            foreach (string line in lines)
+            {
+                string[] fields = line.Split(";");
+                string s = fields[0];
+                char firstchar = s[0];
+
+                if (firstchar == '1')
+                {
+                   appliances.Add(new Refrigerator(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), double.Parse(fields[3]), fields[4], double.Parse(fields[5]), int.Parse(fields[6]), double.Parse(fields[7]), double.Parse(fields[8])));
+                }
+                else if (firstchar == '2')
+                {
+                    appliances.Add(new Vacuum());
+                }
+                else if (firstchar == '3')
+                {
+                    appliances.Add(new Microwave());
+                }
+                else if (firstchar == '4' || firstchar == '5')
+                {
+                    appliaces.Add(new Dishwasher());
+                }
+                
+            }
+        }
+
         public void displayMenu()
         {
             int choice = 0;
