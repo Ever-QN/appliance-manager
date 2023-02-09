@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment1
 {
-    class Appliance
+    abstract class Appliance
     {
         private long itemNumber;
         private string brand;
