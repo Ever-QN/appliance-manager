@@ -8,30 +8,30 @@ namespace Assignment1
 {
    internal class Dishwasher : Appliance
     {
-        private string feature;
+        private int wattage;
         private string soundRating;
+        private string feature;
 
-        public Dishwasher(long itemNumber, string brand, int quantity, double wattage, string color, double price, 
-            string feature, string soundRating) : base(itemNumber, brand, quantity, wattage, color, price)
+        public Dishwasher(long itemNumber, string brand, int quantity, int wattage, string color, double price, string feature, string soundRating)
+            : base(itemNumber, brand, quantity, wattage, color, price)
         {
-            this.Feature = feature;
+            this.Wattage = wattage;
             this.SoundRating = soundRating;
+            this.Feature = feature;
         }
 
-        public string Feature { get; set; }
+        public int Wattage { get; set; }
         public string SoundRating { get; set; }
+        public string Feature { get; set; }
 
-        public override string formatForFile()
+        public override string FormatForFile()
         {
-            return base.formatForFile() + this.feature + ";" + this.soundRating;
+            return base.FormatForFile() + this.wattage + ";" + this.feature + ";" + this.soundRating;
         }
 
         public override string ToString()
         {
-            return "Item Number: " + this.ItemNumber + "\nBrand: " + this.Brand + "\nQuantity: " + this.Quantity + 
-                "\nWattage: " + this.Wattage + "\nColor: " + this.Color + "\nPrice: " + this.Price + 
-                "\nFeature: " + this.feature + "\nSound Rating: " + this.soundRating + "\n";
+            return base.ToString() + "\nWattage: " + this.wattage + "\nSound Rating: " + this.soundRating + "\nFeature: " + this.feature + "\n";
         }
     }
 }
-
