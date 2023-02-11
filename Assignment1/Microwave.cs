@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment1
 {
-    class Microwave : Appliance
+    internal class Microwave : Appliance
     {
         private int wattage;
         private double capacity;
