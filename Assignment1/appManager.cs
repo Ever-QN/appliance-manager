@@ -13,14 +13,6 @@ namespace Assignment1
         {
             appliances = new List<Appliance>();
             loadFile();
-            foreach (Appliance appliance in appliances)
-            {
-                Console.WriteLine(appliance.Brand);
-                if (!string.IsNullOrEmpty(appliance.Brand))
-                {
-                    Console.WriteLine(appliance.Brand);
-                }
-            }
             this.displayMenu();
             //load a file
         }
@@ -56,6 +48,40 @@ namespace Assignment1
             }
         }
 
+        public void checkoutAppliance()
+        {
+            double itemNumberInput = double.Parse(Console.ReadLine());
+            bool invalidItem = false;
+            foreach (Appliance appliance in appliances)
+            {
+                if (itemNumberInput != appliance.ItemNumber)
+                {
+                    invalidItem = true;
+                }
+                if (itemNumberInput == appliance.ItemNumber)
+                {
+                    bool availableItem = appliance.isAvailable();
+                    invalidItem = false;
+                    if (availableItem == true)
+                    {
+                        appliance.checkout();
+                        Console.WriteLine("Appliance " + itemNumberInput + " has been checked out.\n");
+                        break;
+                    }
+                    else if (availableItem == false)
+                    {
+                        Console.WriteLine("The appliance is not available to be checked out.\n");
+                        break;
+                    }
+                }
+            }
+            if(invalidItem == true)
+            {
+                Console.WriteLine("No appliances found with that number.\n");
+            }
+
+        }
+
         public void displayMenu()
         {
             int choice = 0;
@@ -68,13 +94,14 @@ namespace Assignment1
                     "3 – Display appliances by type\n" +
                     "4 – Produce random appliance list\n" +
                     "5 – Save & exit\n");
-                Console.Write("Enter option: ");
+                Console.WriteLine("Enter option: ");
                 choice = int.Parse(Console.ReadLine());
 
                 switch(choice)
                 { // All of these cases should be calling a function
                     case 1:
-                        Console.WriteLine("Checkout the appliance");
+                        Console.WriteLine("Enter the item number of an appliance: ");
+                        checkoutAppliance();
                         break;
                     case 2:
                         Console.WriteLine("Find appliances by brand");

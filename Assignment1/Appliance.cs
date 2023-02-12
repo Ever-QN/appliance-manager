@@ -35,7 +35,7 @@ namespace Assignment1
 
         public bool isAvailable()
         {
-            if (this.quantity == 0) 
+            if (this.Quantity <= 0) 
             { 
                 return false;
             }
@@ -47,7 +47,7 @@ namespace Assignment1
         
         public void checkout()
         {
-            this.quantity -- ;
+            this.Quantity-- ;
         }
 
         public virtual string formatForFile()
