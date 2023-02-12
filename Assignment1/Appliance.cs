@@ -57,8 +57,8 @@ namespace Assignment1
         }
         public override string ToString()
         {
-            return "ItemNumber: " + this.itemNumber + "\nBrand: " + this.itemNumber + "\nQuantity: " + 
-                this.quantity + "\nWattage:" + this.wattage + "\nColor: " + this.color + "\nPrice: " + this.price;
+            return "ItemNumber: " + this.ItemNumber + "\nBrand: " + this.Brand + "\nQuantity: " + 
+                this.Quantity + "\nWattage:" + this.Wattage + "\nColor: " + this.Color + "\nPrice: " + this.Price;
         }
     }
 }
