@@ -31,7 +31,7 @@ namespace Assignment1
 
         public override string ToString()
         {
-            return base.ToString() + "\nWattage: " + this.wattage + "\nCapacity: " + this.capacity + "\nRoom Type: " + this.roomType + "\n";
+            return base.ToString() + "\nWattage: " + this.Wattage + "\nCapacity: " + this.Capacity + "\nRoom Type: " + this.RoomType + "\n";
         }
     }
 }

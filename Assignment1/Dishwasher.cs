@@ -31,7 +31,7 @@ namespace Assignment1
 
         public override string ToString()
         {
-            return base.ToString() + "\nWattage: " + this.wattage + "\nSound Rating: " + this.soundRating + "\nFeature: " + this.feature + "\n";
+            return base.ToString() + "\nWattage: " + this.Wattage + "\nSound Rating: " + this.SoundRating + "\nFeature: " + this.Feature + "\n";
         }
     }
 }

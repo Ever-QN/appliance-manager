@@ -85,6 +85,7 @@ namespace Assignment1
         public void findAppliancesByBrand()
         {
             string brandInput = Console.ReadLine();
+            Console.WriteLine();
             foreach (Appliance appliance in appliances)
             {
                 if (brandInput == appliance.Brand) 
@@ -116,7 +117,7 @@ namespace Assignment1
                         checkoutAppliance();
                         break;
                     case 2:
-                        Console.WriteLine("Enter brand to search for: ");
+                        Console.WriteLine("Enter brand to search for:");
                         findAppliancesByBrand();
                         break;
                     case 3:
