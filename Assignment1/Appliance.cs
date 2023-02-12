@@ -47,8 +47,7 @@ namespace Assignment1
         
         public void checkout()
         {
-            Console.WriteLine("Enter item number of an Appliance: ");
-            
+            this.quantity -- ;
         }
 
         public virtual string formatForFile()
