@@ -24,9 +24,9 @@ namespace Assignment1
         public string SoundRating { get; set; }
         public string Feature { get; set; }
 
-        public override string FormatForFile()
+        public override string formatForFile()
         {
-            return base.FormatForFile() + this.wattage + ";" + this.feature + ";" + this.soundRating;
+            return base.formatForFile() + this.wattage + ";" + this.feature + ";" + this.soundRating;
         }
 
         public override string ToString()

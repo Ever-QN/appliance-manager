@@ -24,9 +24,9 @@ namespace Assignment1
         public double Capacity { get; set; }
         public string RoomType { get; set; }
 
-        public override string FormatForFile()
+        public override string formatForFile()
         {
-            return base.FormatForFile() + this.wattage + ";" + this.capacity + ";" + this.roomType;
+            return base.formatForFile() + this.wattage + ";" + this.capacity + ";" + this.roomType;
         }
 
         public override string ToString()
