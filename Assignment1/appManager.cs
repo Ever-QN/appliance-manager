@@ -42,18 +42,15 @@ namespace Assignment1
                 }
                 else if (firstchar == '2')
                 {
-                    /*appliances.Add(new Vacuum(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), double.Parse(fields[3]), fields[4], double.Parse(fields[5]), fields[6], int.Parse(fields[7])));*/
-                    //Console.WriteLine("Vacuum");
+                    appliances.Add(new Vacuum(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), double.Parse(fields[3]), fields[4], double.Parse(fields[5]), fields[6], int.Parse(fields[7])));
                 }
                 else if (firstchar == '3')
                 {
-                    //appliances.Add(new Microwave());
-                    //Console.WriteLine("Microwave");
+                    appliances.Add(new Microwave(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), int.Parse(fields[3]), fields[4], double.Parse(fields[5]), double.Parse(fields[6]), fields[7]));
                 }
                 else if (firstchar == '4' || firstchar == '5')
                 {
-                    //appliances.Add(new Dishwasher());
-                    //Console.WriteLine("Dishwasher");
+                    appliances.Add(new Dishwasher(long.Parse(fields[0]), fields[1], int.Parse(fields[2]), int.Parse(fields[3]), fields[4], double.Parse(fields[5]), fields[6], fields[7]));
                 }
                 
             }
