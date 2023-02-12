@@ -27,7 +27,7 @@ namespace Assignment1
         }
         public override string ToString()
         {
-            return base.ToString() + "\nGrade: " + this.Grade + "\nBattery Voltage:  " + this.BatteryVoltage + "\n";
+            return base.ToString() + "\nGrade: " + this.Grade + "\nBattery Voltage: " + this.BatteryVoltage + "\n";
         }
     }
 }
