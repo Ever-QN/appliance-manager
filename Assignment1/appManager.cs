@@ -191,8 +191,15 @@ namespace Assignment1
         public void randomApplianceList()
         {
             Console.WriteLine("Enter number of appliances: ");
-            Console.WriteLine("Random appliances: ");
-            
+            int randomNumberInput = int.Parse(Console.ReadLine());
+            Console.WriteLine("Random appliances: \n");
+            Random random = new Random();
+
+            for (int x = 0; x < randomNumberInput; x++)
+            {
+                int randomIndex = random.Next(appliances.Count);
+                Console.WriteLine(appliances[randomIndex].ToString());
+            }
         }
 
         public void displayMenu()
