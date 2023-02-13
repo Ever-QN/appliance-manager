@@ -131,6 +131,42 @@ namespace Assignment1
             }
         }
 
+        public void enterMicrowaveRoom()
+        {
+            Console.WriteLine("Room where the microwave will be installed: K (kitchen) or W (work site)");
+            string microwaveRoomInput = Console.ReadLine();
+            Console.WriteLine("Matching Microwaves: \n");
+            foreach (Appliance appliance in appliances)
+            {
+                if (appliance is Microwave)
+                {
+                    Microwave microwave = (Microwave)appliance;
+                    if (microwaveRoomInput == microwave.RoomType)
+                    {
+                        Console.WriteLine(microwave.ToString());
+                    }
+                }
+            }
+        }
+
+        public void enterSoundRating()
+        {
+            Console.WriteLine("Enter the sound rating of the dishwasher: Qt (Quietest, Qr (Quieter), Qu (Quiet), or M (Moderate)");
+            string soundRatingInput = Console.ReadLine();
+            Console.WriteLine();
+            foreach (Appliance appliance in appliances)
+            {
+                if (appliance is Dishwasher)
+                {
+                    Dishwasher dishwasher = (Dishwasher)appliance;
+                    if (soundRatingInput == dishwasher.SoundRating)
+                    {
+                        Console.WriteLine(dishwasher.ToString());
+                    }
+                }
+            }
+        }
+
         public void displayApplianceByType()
         {
             Console.WriteLine("Enter type of appliance: ");
@@ -143,7 +179,20 @@ namespace Assignment1
                 case 2:
                     enterBatteryVoltage();
                     break;
+                case 3:
+                    enterMicrowaveRoom();
+                    break;
+                case 4:
+                    enterSoundRating();
+                    break;
             }
+        }
+
+        public void randomApplianceList()
+        {
+            Console.WriteLine("Enter number of appliances: ");
+            Console.WriteLine("Random appliances: ");
+            
         }
 
         public void displayMenu()
@@ -176,7 +225,7 @@ namespace Assignment1
                         displayApplianceByType();
                         break;
                     case 4:
-                        Console.WriteLine("Produce random appliance list");
+                        randomApplianceList();
                         break;
                     case 5:
                         Console.WriteLine("Thanks for visiting");
