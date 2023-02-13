@@ -95,6 +95,42 @@ namespace Assignment1
             }
         }
 
+        public void enterNumberOfDoors()
+        {
+            Console.WriteLine("Enter number of doors: 2 (double door), 3 (three doors), or 4 (four doors): ");
+            int doorsInput = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            foreach (Appliance appliance in appliances)
+            {
+                if (appliance is Refrigerator)
+                {
+                    Refrigerator refrig = (Refrigerator)appliance;
+                    if (refrig.NumberOfDoors == doorsInput)
+                    {
+                        Console.WriteLine(refrig.ToString());
+                    }
+                }
+            }
+        }
+
+        public void enterBatteryVoltage()
+        {
+            Console.WriteLine("Enter battery voltage value. 18 V (low) or 24 V (high)");
+            int batteryVoltageInput = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+            foreach (Appliance appliance in appliances)
+            {
+                if (appliance is Vacuum)
+                {
+                    Vacuum vacuum = (Vacuum)appliance;
+                    if (batteryVoltageInput == vacuum.BatteryVoltage)
+                    {
+                        Console.WriteLine(vacuum.ToString());
+                    }
+                }
+            }
+        }
+
         public void displayApplianceByType()
         {
             Console.WriteLine("Enter type of appliance: ");
@@ -102,20 +138,10 @@ namespace Assignment1
             switch(applianceTypeInput)
             {
                 case 1:
-                    Console.WriteLine("Enter number of doors: 2 (double door), 3 (three doors), or 4 (four doors): ");
-                    int doorsInput = int.Parse(Console.ReadLine());
-                    Console.WriteLine();
-                    foreach(Appliance appliance in appliances)
-                    {
-                        if (appliance is Refrigerator)
-                        {
-                            Refrigerator refrig = (Refrigerator)appliance;
-                            if (refrig.NumberOfDoors == doorsInput)
-                            {
-                                Console.WriteLine(refrig.ToString());
-                            }
-                        }
-                    }
+                    enterNumberOfDoors();
+                    break;
+                case 2:
+                    enterBatteryVoltage();
                     break;
             }
         }
