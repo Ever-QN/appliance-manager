@@ -52,8 +52,8 @@ namespace Assignment1
 
         public virtual string formatForFile()
         {
-            return this.itemNumber + ";" + this.brand + ";" + this.quantity + ";" + this.wattage + ";" + 
-                this.color + ";" + this.price + ";";
+            return this.ItemNumber + ";" + this.Brand + ";" + this.Quantity + ";" + this.Wattage + ";" + 
+                this.Color + ";" + this.Price + ";";
         }
         public override string ToString()
         {

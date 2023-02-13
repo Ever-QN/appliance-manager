@@ -236,6 +236,8 @@ namespace Assignment1
                         break;
                     case 5:
                         Console.WriteLine("Thanks for visiting");
+                        string[] lines = appliances.Select(x => x.formatForFile()).ToArray();
+                        File.WriteAllLines("appliances.txt", lines);
                         break;
                 }
             }
