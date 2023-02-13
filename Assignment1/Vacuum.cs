@@ -23,7 +23,7 @@ namespace Assignment1
 
         public override string formatForFile()
         {
-            return base.formatForFile() + this.grade + ";" + this.batteryVoltage + ";";
+            return base.formatForFile() + this.Grade + ";" + this.BatteryVoltage + ";";
         }
         public override string ToString()
         {

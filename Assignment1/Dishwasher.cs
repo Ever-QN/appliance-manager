@@ -26,7 +26,7 @@ namespace Assignment1
 
         public override string formatForFile()
         {
-            return base.formatForFile() + this.wattage + ";" + this.feature + ";" + this.soundRating;
+            return base.formatForFile() + this.Wattage + ";" + this.Feature + ";" + this.SoundRating + ";";
         }
 
         public override string ToString()

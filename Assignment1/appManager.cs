@@ -202,6 +202,12 @@ namespace Assignment1
             }
         }
 
+        public void writeToFile()
+        {
+            string[] lines = appliances.Select(a => a.formatForFile()).ToArray();
+            File.WriteAllLines("appliances.txt", lines);
+        }
+
         public void displayMenu()
         {
             int choice = 0;
@@ -236,8 +242,8 @@ namespace Assignment1
                         break;
                     case 5:
                         Console.WriteLine("Thanks for visiting");
-                        string[] lines = appliances.Select(x => x.formatForFile()).ToArray();
-                        File.WriteAllLines("appliances.txt", lines);
+                        writeToFile();
+
                         break;
                 }
             }

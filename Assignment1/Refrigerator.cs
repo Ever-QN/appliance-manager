@@ -26,7 +26,7 @@ namespace Assignment1
 
         public override string formatForFile()
         {
-            return base.formatForFile() + this.numberOfDoors + ";" + this.height + ";" + this.width;
+            return base.formatForFile() + this.NumberOfDoors + ";" + this.Height + ";" + this.Width + ";";
         }
 
         public override string ToString()
