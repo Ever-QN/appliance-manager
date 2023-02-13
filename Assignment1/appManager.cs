@@ -95,6 +95,31 @@ namespace Assignment1
             }
         }
 
+        public void displayApplianceByType()
+        {
+            Console.WriteLine("Enter type of appliance: ");
+            int applianceTypeInput = int.Parse(Console.ReadLine());
+            switch(applianceTypeInput)
+            {
+                case 1:
+                    Console.WriteLine("Enter number of doors: 2 (double door), 3 (three doors), or 4 (four doors): ");
+                    int doorsInput = int.Parse(Console.ReadLine());
+                    Console.WriteLine();
+                    foreach(Appliance appliance in appliances)
+                    {
+                        if (appliance is Refrigerator)
+                        {
+                            Refrigerator refrig = (Refrigerator)appliance;
+                            if (refrig.NumberOfDoors == doorsInput)
+                            {
+                                Console.WriteLine(refrig.ToString());
+                            }
+                        }
+                    }
+                    break;
+            }
+        }
+
         public void displayMenu()
         {
             int choice = 0;
@@ -121,7 +146,8 @@ namespace Assignment1
                         findAppliancesByBrand();
                         break;
                     case 3:
-                        Console.WriteLine("Display appliances by type");
+                        Console.WriteLine("\nAppliance Types\r\n1 – Refrigerators\r\n2 – Vacuums\r\n3 – Microwaves\r\n4 – Dishwashers\r\n");
+                        displayApplianceByType();
                         break;
                     case 4:
                         Console.WriteLine("Produce random appliance list");
