@@ -12,6 +12,7 @@ namespace Assignment1
     {
         private string grade;
         private int batteryVoltage;
+
         public Vacuum (long itemNumber, string brand, int quantity, double wattage, string color, double price, string grade, int batteryVoltage) : base(itemNumber, brand, quantity, wattage, color, price)
         {
             this.Grade = grade;
